@@ -116,7 +116,7 @@ class Csdn extends React.Component {
                     <Layout>                        
                         <Content>
                         <div className="content-info">
-                        <List itemLayout="vertical" size="large" dataSource={chapterList} footer={_this.loadMoreDom()}
+                        <List itemLayout="vertical" size="large" loading={_this.state.loading} dataSource={chapterList} footer={_this.loadMoreDom()}
                             renderItem={(item,index) => (
                             <List.Item
                                 key={item.csdnTitle.replace(/amp;/g,'').replace(/&mdash;/g,'—')}
