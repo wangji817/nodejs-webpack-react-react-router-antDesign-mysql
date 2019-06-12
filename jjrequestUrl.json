@@ -1,0 +1,25 @@
+{
+    "juejinReq":{
+        "juejinUrl": "https://web-api.juejin.im/query",
+        "hasNextPage":true,
+        "requestHead": {
+            "operationName": "",
+            "query": "",
+            "variables": {
+                "tags": [],
+                "category": "5562b415e4b00c57d9b94ac8",
+                "first": 100,
+                "after": "",
+                "order": "POPULAR"
+            },
+            "extensions": {
+                "query": {
+                    "id": "653b587c5c7c8a00ddf67fc66f989d42"
+                }
+            }
+        }
+    },
+    "csdnReq":{
+        "cdsnUrl":"https://www.csdn.net/api/articles?type=new&category=web"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mysql":{
+        "host":"127.0.0.1",
+        "port":"3306",
+        "protocol":"mysql",
+        "user":"root",
+        "password":"123456",
+        "database":"jjchapter",
+        "connectionLimit":200
+    },
+    "jjSql":{
+        "SELECT":"select * from chapterlist group by chapterId order by chapterLikeCount desc",
+        "REPLACE":"REPLACE INTO chapterlist(`chapterId`,`chapterName`,`chapterLikeCount`,`chapterCommentsCount`,`chapterTags`,`chapterUsername`,`chapterUrl`) VALUES ?"
+    },
+    "csdnSql":{
+        "REPLACE":"REPLACE INTO csdnlist(`csdnTitle`,`csdnNickName`,`csdnAvtar`,`csdnCreateDate`,`csdnChapterDesc`,`csdnUserUrl`,`csdnBlogUrl`,`csdnViews`,`csdnComments`,`csdnId`,`csdnTags`) VALUES ?",
+        "SELECT":"select * from csdnlist group by csdnId order by csdnViews"
+    }
+}

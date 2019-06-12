@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/**界面色系,pg为page页面缩写，blue为色系，Main类似的后缀为颜色作用**/
+/**文字色系,txt为text文本缩写，blue为色系，Main类似的后缀为颜色作用**/
+/**标签色系,tg为tag标签缩写，blue为色系，Main类似的后缀为颜色作用**/
+/**scrollable,2017/3/10,start**/
+/**使ios滚动更加平滑**/
+/**scrollable,2017/3/10,end,**/
+/**vendor prefix,2017/3/10,start**/
+/**主要用于各种animation浏览器适配前缀**/
+/**vendor prefix,2017/3/10,end,**/
+/**text-overflow,2017/3/10,start**/
+/**适用于inline-block或block**/
+/**text-overflow,2017/3/10,end**/
+/**line clamp,2017/3/10,start**/
+/**控制文字显示行数**/
+/**line clamp,2017/3/10,end**/
+/**clearfix,2017/3/10,start**/
+/**清楚浮动**/
+/**clearfix,2017/3/10,end**/
+/**triangle,2017/3/10,start**/
+/** Creates a CSS triangle, which can be used for dropdown arrows, popup tails, and more. Use this mixin inside a `&::before` or `&::after` selector, to attach the triangle to an existing element.
+@param {number} $triangle-size - Width of the triangle.
+@param {color} $triangle-color - Color of the triangle.
+@param {keyword} $triangle-direction - Direction the triangle points. Can be `top`, `right`, `bottom`, or `left`.
+**/
+/**triangle,2017/3/10,end**/
+/**triangle,2017/3/10,start**/
+/**animation hardware accelaration**/
+/**triangle,2017/3/10,end**/
+* {
+  word-break: break-word; }
+
+img {
+  vertical-align: middle; }
+
+.cmr-home {
+  background-color: #fcfcfc;
+  position: relative; }
+  .cmr-home .cmrlog-main {
+    height: 100%; }
+    .cmr-home .cmrlog-main .header-title {
+      color: #fff;
+      text-align: center; }
+    .cmr-home .cmrlog-main .ant-layout-content {
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 0 50px; }
+      .cmr-home .cmrlog-main .ant-layout-content .content-info {
+        background-color: #fcfcfc;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        padding: 6px 10px;
+        border: 2px solid #f0f0f0; }
+        .cmr-home .cmrlog-main .ant-layout-content .content-info .chapterInfo .chapterUrl {
+          font-size: 1.1rem;
+          color: #000;
+          font-weight: 900;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .cmr-home .cmrlog-main .ant-layout-content .content-info .chapterInfo .chapterCount {
+          display: inline-block;
+          margin-left: 20px; }
+          .cmr-home .cmrlog-main .ant-layout-content .content-info .chapterInfo .chapterCount .chapterText {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: 0.023rem;
+            margin-left: 2px; }
+        .cmr-home .cmrlog-main .ant-layout-content .content-info .chapterInfo .chapterUser {
+          font-size: 0.85rem;
+          color: #909090; }
+    .cmr-home .cmrlog-main .ant-layout-footer {
+      background-color: rgba(0, 21, 41, 0.8);
+      color: #fff; }
+    .cmr-home .cmrlog-main .content-time {
+      margin: 5px 0; }
+      .cmr-home .cmrlog-main .content-time .content-time-title {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 0.85rem;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        margin-right: 5px; }
+      .cmr-home .cmrlog-main .content-time .ant-calendar-picker {
+        margin-right: 5px; }
+      .cmr-home .cmrlog-main .content-time .ant-btn + .ant-btn {
+        margin-left: 4px; }
+.page {
+  font-size: 1.2rem; }

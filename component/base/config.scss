@@ -1,0 +1,203 @@
+@charset "utf-8";
+/**界面色系,pg为page页面缩写，blue为色系，Main类似的后缀为颜色作用**/
+$bg:#fcfcfc;//界面主背景色
+$pgBlueMain:#3778ff;//界面主色
+$pgBlueDarken:#3e8aff;//界面辅色深蓝
+$pgBlueLighten:#51a4ff;//界面辅色浅蓝
+$pgGreenAsist:#8dc81b;//界面点缀色绿色
+$pgGreenAsist:#8dc81b;//界面点缀色绿色
+$pgOrgAsist:#ff8c10;//界面点缀色橙色
+$pgRedAsist:#f85a44;//界面点缀色红色
+/**文字色系,txt为text文本缩写，blue为色系，Main类似的后缀为颜色作用**/
+$txtDarkMain:#464c56;//文字主色
+$txtGrayDark:#969fa9;//文字辅助深灰色
+$txtGrayMid:#c3ced9;//文字辅助中等灰色
+$txtGrayLight:#c3ced9;//文字辅助浅灰色
+/**标签色系,tg为tag标签缩写，blue为色系，Main类似的后缀为颜色作用**/
+$tgBlueMain:#428DFF;//标签主要蓝色
+$tgYellowMain:#FF8C10;//标签主要黄色
+$tgPurpleMain:#8D57FA;//标签主要紫色
+$tgBlueShadow:#OC4173;//标签投影蓝色
+$tgYellowShadow:#803102;//标签投影黄色
+$tgPurpleShadow:#581F83;//标签投影紫色
+$tgBlueGradD:#3778FF;//标签渐变深蓝
+$tgBlueGradL:#4B91FC;//标签渐变浅蓝
+$tgYellowGradD:#F66A1A;//标签渐变深黄
+$tgYellowGradL:#FF8C10;//标签渐变浅黄
+$tgPurpleGradD:#6643C9;//标签渐变深紫
+$tgPurpleGradL:#8D57FA;//标签渐变浅紫
+$colorNormal:#464c56;
+$colorWhite:#fff;//toast bg
+
+
+// 灰度图片的1像素 base64
+$blankURI: 'data:image/gif;base64,R0lGODlhAQABAPAAAPf39////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==';
+//柚子街logo图片地址
+$logoURI:'http://static.seeyouyima.com/h5.m.meiyou.com/logo/youzijie1.1.png';
+
+/**scrollable,2017/3/10,start**/
+/**使ios滚动更加平滑**/
+@mixin smooth-scroll{
+  -webkit-overflow-scrolling:touch;
+}
+/**scrollable,2017/3/10,end,**/
+/**vendor prefix,2017/3/10,start**/
+/**主要用于各种animation浏览器适配前缀**/
+@mixin prefix($property, $value){
+  -webkit-#{$property}: $value;
+  #{$property}: $value;
+}
+@mixin scale($ratio){
+  -webkit-transform:scale($ratio);
+  transform:scale($ratio);
+}
+@mixin scaleX($ratio){
+  -webkit-transform:scaleX($ratio);
+  transform:scaleX($ratio);
+}
+@mixin scaleY($ratio){
+  -webkit-transform:scaleY($ratio);
+  transform:scaleY($ratio);
+}
+@mixin skew($x,$y){
+  -webkit-transform:skewx($x) skewy($y);
+  transform:skewx($x) skewy($y);
+}
+@mixin translate($x,$y){
+  -webkit-transform:translate($x,$y);
+  transform:translate($x,$y);
+}
+@mixin rotate($degrees){
+  -webkit-transform:rotate($degrees);
+  transform:rotate($degrees);
+}
+@mixin rotateX($degrees){
+  -webkit-transform:rotateX($degrees);
+  transform:rotateX($degrees);
+}
+@mixin rotateY($degrees){
+  -webkit-transform:rotateY($degrees);
+  transform:rotateY($degrees);
+}
+/**vendor prefix,2017/3/10,end,**/
+/**text-overflow,2017/3/10,start**/
+/**适用于inline-block或block**/
+@mixin text-overflow{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+/**text-overflow,2017/3/10,end**/
+/**line clamp,2017/3/10,start**/
+/**控制文字显示行数**/
+@mixin line-clamp($lines){
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$lines;
+  overflow:hidden;
+  max-height:150% * $lines;
+}
+/**line clamp,2017/3/10,end**/
+/**clearfix,2017/3/10,start**/
+/**清楚浮动**/
+@mixin clearfix{
+  &:before,
+  &:after{
+    content:"";
+    display:table;}
+  &:after{
+    clear:both;
+    overflow:hidden;}
+}
+/**clearfix,2017/3/10,end**/
+/**triangle,2017/3/10,start**/
+/** Creates a CSS triangle, which can be used for dropdown arrows, popup tails, and more. Use this mixin inside a `&::before` or `&::after` selector, to attach the triangle to an existing element.
+@param {number} $triangle-size - Width of the triangle.
+@param {color} $triangle-color - Color of the triangle.
+@param {keyword} $triangle-direction - Direction the triangle points. Can be `top`, `right`, `bottom`, or `left`.
+**/
+@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset $triangle-size;
+  @if ($triangle-direction == top) {
+    border-color: $triangle-color transparent transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == bottom) {
+    border-color: transparent transparent $triangle-color transparent;
+    border-bottom-style: solid;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+/**triangle,2017/3/10,end**/
+/**triangle,2017/3/10,start**/
+/**animation hardware accelaration**/
+@mixin force-hardware-acceleration{
+  transform:translateZ(0);
+  backface-visibility:hidden;
+  perspective:inherit;
+}
+/**triangle,2017/3/10,end**/
+@mixin flex-box(){
+  display:-moz-box;
+  display:-webkit-box;
+  display:box;
+  display:flex;
+  display:-webkit-flex;
+}
+@mixin child-flex(){
+  -moz-box-flex:1;
+  -webkit-box-flex:1;
+  box-flex:1;
+  flex:1;
+  display:block;
+}
+@function pxTorem($px){
+  @return $px/30+ rem;
+}
+@mixin transformXYZ($form,$xyz,$percent){
+  @if($form == top){
+    top:$percent;
+  }@else if($form == topleft){
+    top:$percent;
+    left:$percent;
+  }@else{
+    #{$form}:$percent;
+  }
+  $position:translate3d(0,0,0);
+  @if ($xyz == x){
+    $position:translate3d(-$percent,0,0);
+  }@elseif ($xyz == y){
+    $position:translate3d(0,-$percent,0);
+  }@elseif ($xyz == z){
+    $position:translate3d(0,0,-$percent);
+  }@elseif ($xyz == xy){
+    $position:translate3d(-$percent,-$percent,0);
+  }@elseif ($xyz == xz){
+    $position:translate3d(-$percent,0,-$percent);
+  }@elseif ($xyz == yz){
+    $position:translate3d(0,-$percent,-$percent);
+  }@elseif ($xyz == xyz){
+    $position:translate3d(-$percent,-$percent,-$percent);
+  }
+  transform:$position;
+  -webkit-transform:$position;
+}
+
+@mixin borderRadius($px){
+  border-radius: $px;
+  -webkit-border-radius: $px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
