@@ -21,5 +21,6 @@
 ##### 启动顺序
 > 1.git clone 当前项目.git地址<br/>
 2.npm install<br/>
-3.新开cmd窗口 node jjIndex.js<br/>
-4.新开cmd窗口 npm run online 线上模式 npm run dev 开发模式，开发模式需要新开窗口 npm run build 文件监听；<br/>
+3.已安装mysql并已启动，创建jjchapter数据库，导入项目下jjchapter.sql、csdnlist.sql两个数据库表，数据库账号root，密码123456，端口号3306<br/>
+4.新开cmd窗口 node jjIndex.js<br/>
+5.新开cmd窗口 npm run online 线上模式 npm run dev 开发模式，开发模式需要新开窗口 npm run build 文件监听；<br/>
