@@ -35,3 +35,4 @@ asset-资源文件夹<br/>
 3.已安装mysql并已启动，创建jjchapter数据库，导入项目下jjchapter.sql、csdnlist.sql两个数据库表，数据库账号root，密码123456，端口号3306<br/>
 4.新开cmd窗口 node jjIndex.js，前提是安装了nodejs，推荐8.5以上稳定版本<br/>
 5.新开cmd窗口 npm run online 线上模式 npm run dev 开发模式，开发模式需要新开窗口 npm run build 文件监听；<br/>
+6.访问地址：localhost:5678<br/>
