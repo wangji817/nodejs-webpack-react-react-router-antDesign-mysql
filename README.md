@@ -9,6 +9,17 @@
 ##### 爬虫目标
 > 以掘金和csdn技术文章作为爬取目标，最终实现至本地网页展示、后续还可以不停新增别的爬取目标。
 
+##### 文件说明
+> webpack.config.js-webpack配置文件<br/>
+jjrequestUrl.json-后端请求配置文件<br/>
+jjmysql.json-node连接mysql库的配置文件<br/>
+jjchapter.sql&csdnlist.sql-数据库表运行sql文件<br/>
+views-html页面文件<br/>
+src-页面js文件入口<br/>
+dist-页面打包出口<br/>
+component-组件文件夹<br/>
+asset-资源文件夹<br/>
+
 ##### 爬虫技术
 > 1）Nodejs作为核心后端爬取媒介<br/>
 2）Mysql作为数据存储<br/>
