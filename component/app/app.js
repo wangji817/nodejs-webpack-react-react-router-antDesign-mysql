@@ -5,7 +5,7 @@ import Csdn from '../../component/csdn/csdn.js';
 // import ScreenLog from '../base/screenLog.js';
 import {Layout, BackTop ,Menu, Dropdown, Icon,Affix} from 'antd';
 const { SubMenu }  = Menu;
-const {Header, Footer,} = Layout;
+const {Header, Footer} = Layout;
 import './app.scss';
 
 class App extends React.Component {

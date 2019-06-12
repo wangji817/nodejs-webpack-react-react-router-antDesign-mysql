@@ -1,21 +1,8 @@
 @import '../base/config.scss';
-// @import "../../node_modules/antd/dist/antd.css";
-*{
-	word-break:break-word;
-}
-img{
-	vertical-align: middle;
-}
 .cmr-home {	
 	background-color: #fcfcfc;
-	position:relative;
-	
+	position:relative;	
     .cmrlog-main{
-    	height:100%;
-	    .header-title{
-				color:#fff;
-				text-align: center;
-			}    	
 	    .ant-layout-content{
 	    	background-color: rgba(#fff,0.3);
 	    	padding:0 50px;	  
@@ -52,31 +39,5 @@ img{
 				}
 	    	}  	
 	    }
-	    .ant-layout-footer{
-	    	background-color: rgba(#001529,0.8);
-	    	color:#fff;
-	    }
-		.content-time{
-			margin:5px 0;
-			.content-time-title{
-				display:inline-block;
-				font-weight: 600;
-				font-size: 0.85rem;
-				height:32px;
-				line-height: 32px;
-				padding:0 10px;
-				background-color: rgba(#000,0.5);
-				color:#fff;
-				border-radius: 5px;
-				-webkit-border-radius: 5px;
-				margin-right: 5px;
-			}
-			.ant-calendar-picker{
-				margin-right: 5px;
-			}
-			.ant-btn+.ant-btn{
-				margin-left: 4px;
-			}
-		}
     }
 }

@@ -1,16 +1,8 @@
 @import '../base/config.scss';
-// @import "../../node_modules/antd/dist/antd.css";
-*{
-	word-break:break-word;
-}
-img{
-	vertical-align: middle;
-}
 .cmr-home {	
 	background-color: #fcfcfc;
 	position:relative;
-    .cmrlog-main{
-    	height:100%;
+    .cmrlog-main{    	
 	    .header-title{
 			color:#fff;
 			text-align: center;
@@ -25,10 +17,6 @@ img{
 	    		padding:6px 10px;
 				border:2px solid #f0f0f0;				
 	    	}  	
-	    }
-	    .ant-layout-footer{
-	    	background-color: rgba(#001529,0.8);
-	    	color:#fff;
 	    }
     }
 }
