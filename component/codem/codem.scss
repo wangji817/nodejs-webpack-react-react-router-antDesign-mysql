@@ -1,0 +1,19 @@
+@import '../base/config.scss';
+@import "../../node_modules/codemirror/lib/codemirror.css";
+.cmr-codem {	
+	background-color: #fcfcfc;
+	position:relative;
+	.codem-layout{
+		position: fixed;
+	    height: 100%;
+	    width: 100%;
+	    left: 0;
+	    z-index: 10;
+		.ant-layout-content{
+			background-color: #000!important;
+		}
+		.CodeMirror{
+			height:89.5%;			
+		}
+	}
+}

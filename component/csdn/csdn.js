@@ -138,8 +138,7 @@ class Csdn extends React.Component {
                         </div>
                         </Content>                        
                     </Layout>                
-                </div>
-                <BackTop />
+                </div>                
             </div>
 		)
     }

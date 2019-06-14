@@ -120,8 +120,7 @@ class Home extends React.Component {
                             </div>                            
                         </Content>                        
                     </Layout>                
-                </div>
-                <BackTop />
+                </div>                
             </div>
 		)
     }
