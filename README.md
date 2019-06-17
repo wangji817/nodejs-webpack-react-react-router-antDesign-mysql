@@ -36,6 +36,7 @@ asset-资源文件夹<br/>
 4.新开cmd窗口 node jjIndex.js，前提是安装了nodejs，推荐8.5以上稳定版本<br/>
 5.新开cmd窗口 npm run online 线上模式 npm run dev 开发模式，开发模式需要新开窗口 npm run build 文件监听；<br/>
 6.访问地址：localhost:5678<br/>
+7.项目线上地址：[http://www.xyji.top:5678](http://www.xyji.top:5678)
 
 ##### 更新日志
 1. 更新package.json依赖  
