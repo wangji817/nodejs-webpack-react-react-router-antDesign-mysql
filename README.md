@@ -10,15 +10,59 @@
 > 以掘金和csdn技术文章作为爬取目标，最终实现至本地网页展示、后续还可以不停新增别的爬取目标。
 
 ##### 文件说明
-> webpack.config.js-webpack配置文件<br/>
-jjrequestUrl.json-后端请求配置文件<br/>
-jjmysql.json-node连接mysql库的配置文件<br/>
-jjchapter.sql&csdnlist.sql-数据库表运行sql文件<br/>
-views-html页面文件<br/>
-src-页面js文件入口<br/>
-dist-页面打包出口<br/>
-component-组件文件夹<br/>
-asset-资源文件夹<br/>
+> .
+|-- README.md 项目描述文件
+|-- asset 资源文件夹
+|   |-- swiper.min.css swiper插件样式文件
+|   `-- vendor1.0.min.css 基础样式文件
+|-- component 组件文件夹
+|   |-- app 主入口组件
+|   |   |-- app.js
+|   |   `-- app.scss
+|   |-- base 组件库
+|   |   |-- config.scss
+|   |   |-- lazy.js
+|   |   |-- pinyin.js
+|   |   |-- screenLog.js
+|   |   `-- swiper.min.js
+|   |-- codem 写代码文件
+|   |   |-- codem.js
+|   |   `-- codem.scss
+|   |-- csdn csdn组件
+|   |   |-- csdn.js
+|   |   `-- csdn.scss
+|   `-- home 掘金组件
+|       |-- home.js
+|       `-- home.scss
+|-- csdnlist.sql csdn数据库表
+|-- dist 打包文件夹
+|   |-- app
+|   |   |-- app.css
+|   |   `-- app.js
+|   |-- csdn
+|   |   |-- csdn.css
+|   |   `-- csdn.js
+|   |-- home
+|   |   |-- home.css
+|   |   `-- home.js
+|   |-- hot
+|   |   |-- hot-update.js
+|   |   `-- hot-update.json
+|   `-- vendor.js 核心js文件
+|-- index.html 主页html用来重定向
+|-- jjIndex.js node前端及后端服务主文件
+|-- jjchapter.sql 掘金数据库表文件
+|-- jjmysql.json 数据库json文件
+|-- jjrequestUrl.json 爬取相关配置文件
+|-- package-lock.json 
+|-- package.json 项目配置文件
+|-- src 入口文件夹
+|   `-- app app入口文件
+|       |-- index.js
+|       `-- index.scss
+|-- views 静态页面文件夹
+|   `-- index.html 默认静态页面
+`-- webpack.config.js webpack配置文件
 
 ##### 爬虫技术
 > 1）Nodejs作为核心后端爬取媒介<br/>
