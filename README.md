@@ -10,59 +10,60 @@
 > 以掘金和csdn技术文章作为爬取目标，最终实现至本地网页展示、后续还可以不停新增别的爬取目标。
 
 ##### 文件说明
-.
-|-- README.md 项目描述文件<br/>
-|-- asset 资源文件夹<br/>
-|   |-- swiper.min.css swiper插件样式文件<br/>
-|   `-- vendor1.0.min.css 基础样式文件<br/>
-|-- component 组件文件夹<br/>
-|   |-- app 主入口组件<br/>
-|   |   |-- app.js<br/>
-|   |   `-- app.scss<br/>
-|   |-- base 组件库<br/>
-|   |   |-- config.scss<br/>
-|   |   |-- lazy.js<br/>
-|   |   |-- pinyin.js<br/>
-|   |   |-- screenLog.js<br/>
-|   |   `-- swiper.min.js<br/>
-|   |-- codem 写代码文件<br/>
-|   |   |-- codem.js<br/>
-|   |   `-- codem.scss<br/>
-|   |-- csdn csdn组件<br/>
-|   |   |-- csdn.js<br/>
-|   |   `-- csdn.scss<br/>
-|   `-- home 掘金组件<br/>
-|       |-- home.js<br/>
-|       `-- home.scss<br/>
-|-- csdnlist.sql csdn数据库表<br/>
-|-- dist 打包文件夹<br/>
-|   |-- app<br/>
-|   |   |-- app.css<br/>
-|   |   `-- app.js<br/>
-|   |-- csdn<br/>
-|   |   |-- csdn.css<br/>
-|   |   `-- csdn.js<br/>
-|   |-- home<br/>
-|   |   |-- home.css<br/>
-|   |   `-- home.js<br/>
-|   |-- hot<br/>
-|   |   |-- hot-update.js<br/>
-|   |   `-- hot-update.json<br/>
-|   `-- vendor.js 核心js文件<br/>
-|-- index.html 主页html用来重定向<br/>
-|-- jjIndex.js node前端及后端服务主文件<br/>
-|-- jjchapter.sql 掘金数据库表文件<br/>
-|-- jjmysql.json 数据库json文件<br/>
-|-- jjrequestUrl.json 爬取相关配置文件<br/>
-|-- package-lock.json <br/>
-|-- package.json 项目配置文件<br/>
-|-- src 入口文件夹<br/>
-|   `-- app app入口文件<br/>
-|       |-- index.js<br/>
-|       `-- index.scss<br/>
-|-- views 静态页面文件夹<br/>
-|   `-- index.html 默认静态页面<br/>
-`-- webpack.config.js webpack配置文件<br/>
+```
+|-- README.md 项目描述文件
+|-- asset 资源文件夹
+|   |-- swiper.min.css swiper插件样式文件
+|   `-- vendor1.0.min.css 基础样式文件
+|-- component 组件文件夹
+|   |-- app 主入口组件
+|   |   |-- app.js
+|   |   `-- app.scss
+|   |-- base 组件库
+|   |   |-- config.scss
+|   |   |-- lazy.js
+|   |   |-- pinyin.js
+|   |   |-- screenLog.js
+|   |   `-- swiper.min.js
+|   |-- codem 写代码文件
+|   |   |-- codem.js
+|   |   `-- codem.scss
+|   |-- csdn csdn组件
+|   |   |-- csdn.js
+|   |   `-- csdn.scss
+|   `-- home 掘金组件
+|       |-- home.js
+|       `-- home.scss
+|-- csdnlist.sql csdn数据库表
+|-- dist 打包文件夹
+|   |-- app
+|   |   |-- app.css
+|   |   `-- app.js
+|   |-- csdn
+|   |   |-- csdn.css
+|   |   `-- csdn.js
+|   |-- home
+|   |   |-- home.css
+|   |   `-- home.js
+|   |-- hot
+|   |   |-- hot-update.js
+|   |   `-- hot-update.json
+|   `-- vendor.js 核心js文件
+|-- index.html 主页html用来重定向
+|-- jjIndex.js node前端及后端服务主文件
+|-- jjchapter.sql 掘金数据库表文件
+|-- jjmysql.json 数据库json文件
+|-- jjrequestUrl.json 爬取相关配置文件
+|-- package-lock.json 
+|-- package.json 项目配置文件
+|-- src 入口文件夹
+|   `-- app app入口文件
+|       |-- index.js
+|       `-- index.scss
+|-- views 静态页面文件夹
+|   `-- index.html 默认静态页面
+`-- webpack.config.js webpack配置文件
+```
 
 ##### 爬虫技术
 > 1）Nodejs作为核心后端爬取媒介<br/>
